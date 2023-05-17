@@ -7,85 +7,106 @@
 </head>
 <body>
     <h1>We love coffeeeee</h1>
+    <hr>
+    <div class="hidden">
     <div id="1">
-        <h2>Light City</h2>
-        <p>light</p>
+        <h2 class="name">Light City</h2>
+        <p class ="roast">light</p>
     </div>
 
     <div id="2">
-        <h2>Half City</h2>
-        <p>light</p>
+        <h2 class="name">Half City</h2>
+        <p class ="roast">light</p>
     </div>
 
     <div id="3">
-        <h2>Cinnamon</h2>
-        <p>light</p>
+        <h2 class="name">Cinnamon</h2>
+        <p class ="roast">light</p>
     </div>
 
     <div id="4">
-        <h2>City</h2>
-        <p>medium</p>
+        <h2 class="name">City</h2>
+        <p class ="roast">medium</p>
     </div>
 
     <div id="5">
-        <h2>American</h2>
-        <p>medium</p>
+        <h2 class="name">American</h2>
+        <p class ="roast">medium</p>
     </div>
 
     <div id="6">
-        <h2>Breakfast</h2>
-        <p>medium</p>
+        <h2 class="name">Breakfast</h2>
+        <p class ="roast">medium</p>
     </div>
 
     <div id="7">
-        <h2>High</h2>
-        <p>dark</p>
+        <h2 class="name">High</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="8">
-        <h2>Continental</h2>
-        <p>dark</p>
+        <h2 class="name">Continental</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="9">
-        <h2>New Orleans</h2>
-        <p>dark</p>
+        <h2 class="name">New Orleans</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="10">
-        <h2>European</h2>
-        <p>dark</p>
+        <h2 class="name">European</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="11">
-        <h2>Espresso</h2>
-        <p>dark</p>
+        <h2 class="name">Espresso</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="12">
-        <h2>Viennese</h2>
-        <p>dark</p>
+        <h2 class="name">Viennese</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="13">
-        <h2>Italian</h2>
-        <p>dark</p>
+        <h2 class="name">Italian</h2>
+        <p class ="roast">dark</p>
     </div>
 
     <div id="14">
-        <h2>French</h2>
-        <p>dark</p>
+        <h2 class="name">French</h2>
+        <p class ="roast">dark</p>
+    </div>
     </div>
 
-<!--    <form>-->
-<!--        <label for="roast-selection"></label>-->
-<!--        <select id="roast-selection">-->
-<!--            <option>light</option>-->
-<!--            <option>medium</option>-->
-<!--            <option>dark</option>-->
-<!--        </select>-->
-<!--        <input id="submit" type="submit" />-->
-<!--    </form>-->
+    <form>
+        <label for="roast-selection"> Choose a Roast</label><br>
+        <select id="roast-selection">
+            <option>all</option>
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select><br>
+        <label for="coffee-selection"> Choose A Coffee</label><br>
+        <input type="text" id="coffee-selection"/><br><br>
+        <input class="submit" type="submit" />
+
+    </form>
+    <h2>Would you like to add a Coffee?</h2>
+    <form>
+        <label for="roast-add"> Choose a Roast</label><br>
+        <select id="roast-add">
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select><br>
+        <label for="coffee-add"> Choose A Coffee</label><br>
+        <input type="text" id="coffee-add"/><br><br>
+        <input class="submit" type="submit" />
+
+    </form>
+
 
 <!--    <table>-->
 <!--        <thead>-->
@@ -97,6 +118,7 @@
 <!--        </thead>-->
 <!--        <tbody id="coffees"></tbody>-->
 <!--    </table>-->
+
 
     <script src="main.js"></script>
 </body>
