@@ -1,3 +1,85 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Coffee Project</title>-->
+<!--    <link rel="stylesheet" href="style.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Coffee!</h1>-->
+
+<!--<form>-->
+<!--    <label for="roast-selection">Roast</label><br>-->
+<!--    <select id="roast-selection">-->
+<!--        <option value="all">All</option>-->
+<!--        <option value="light">Light</option>-->
+<!--        <option value="medium">Medium</option>-->
+<!--        <option value="dark">Dark</option>-->
+<!--    </select> <br><br>-->
+<!--    <label for="search">Coffee Name</label><br>-->
+<!--    <input type="text" id="search"><br><br>-->
+<!--    <input id="submit" type="submit" value="Submit">-->
+<!--</form><br>-->
+
+<!--<div id="coffee"></div>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Coffee Project</title>-->
+<!--    <link rel="stylesheet" href="style.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Coffee!</h1>-->
+
+<!--<form id="search-coffee">-->
+<!--    <label for="roast-selection">Roast</label><br>-->
+<!--    <select id="roast-selection">-->
+<!--        <option value="all">All</option>-->
+<!--        <option value="light">Light</option>-->
+<!--        <option value="medium">Medium</option>-->
+<!--        <option value="dark">Dark</option>-->
+<!--    </select> <br><br>-->
+<!--    <label for="search">Coffee Name</label><br>-->
+<!--    <input type="text" id="search"><br><br>-->
+<!--    <input id="submit" type="submit" value="Submit">-->
+<!--</form><br>-->
+
+
+<!--<form id="name-input">-->
+<!--    <label for="coffee-roast">Roast</label><br>-->
+<!--    <select id="coffee-roast">-->
+<!--        <option value="light">Light</option>-->
+<!--        <option value="medium">Medium</option>-->
+<!--        <option value="dark">Dark</option>-->
+<!--    </select><br><br>-->
+<!--    <label for="coffee-name">Name</label><br>-->
+<!--    <input type="text" id="coffee-name"><br><br>-->
+<!--    <input id="addCoffee" type="submit" value="Submit">-->
+<!--</form><br>-->
+<!--<h3>Option Selected</h3>-->
+<!--<div id="coffee"></div>-->
+
+<!--<script src="main.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!--<form id="name-input">-->
+<!--    <label for="coffee-roast">Roast</label><br>-->
+<!--    <select id="coffee-roast">-->
+<!--        <option value="light">Light</option>-->
+<!--        <option value="medium">Medium</option>-->
+<!--        <option value="dark">Dark</option>-->
+<!--    </select><br><br>-->
+<!--    <label for="coffee-name">Name</label><br>-->
+<!--    <input type="text" id="coffee-name"><br><br>-->
+<!--    <input class="add" type="submit" value="Submit">-->
+<!--</form><br>-->
+
+<!--<script src="main.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,120 +88,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>We love coffeeeee</h1>
-    <hr>
-    <div class="hidden">
-    <div id="1">
-        <h2 class="name">Light City</h2>
-        <p class ="roast">light</p>
-    </div>
+<h1>Coffee!</h1>
 
-    <div id="2">
-        <h2 class="name">Half City</h2>
-        <p class ="roast">light</p>
-    </div>
-
-    <div id="3">
-        <h2 class="name">Cinnamon</h2>
-        <p class ="roast">light</p>
-    </div>
-
-    <div id="4">
-        <h2 class="name">City</h2>
-        <p class ="roast">medium</p>
-    </div>
-
-    <div id="5">
-        <h2 class="name">American</h2>
-        <p class ="roast">medium</p>
-    </div>
-
-    <div id="6">
-        <h2 class="name">Breakfast</h2>
-        <p class ="roast">medium</p>
-    </div>
-
-    <div id="7">
-        <h2 class="name">High</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="8">
-        <h2 class="name">Continental</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="9">
-        <h2 class="name">New Orleans</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="10">
-        <h2 class="name">European</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="11">
-        <h2 class="name">Espresso</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="12">
-        <h2 class="name">Viennese</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="13">
-        <h2 class="name">Italian</h2>
-        <p class ="roast">dark</p>
-    </div>
-
-    <div id="14">
-        <h2 class="name">French</h2>
-        <p class ="roast">dark</p>
-    </div>
-    </div>
-
-    <form>
-        <label for="roast-selection"> Choose a Roast</label><br>
-        <select id="roast-selection">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select><br>
-        <label for="coffee-selection"> Choose A Coffee</label><br>
-        <input type="text" id="coffee-selection"/><br><br>
-        <input class="submit" type="submit" />
-
-    </form>
-    <h2>Would you like to add a Coffee?</h2>
-    <form>
-        <label for="roast-add"> Choose a Roast</label><br>
-        <select id="roast-add">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select><br>
-        <label for="coffee-add"> Choose A Coffee</label><br>
-        <input type="text" id="coffee-add"/><br><br>
-        <input class="submit" type="submit" />
-
-    </form>
+<form id="search-coffee">
+    <label for="roast-selection">Roast</label><br>
+    <select id="roast-selection">
+        <option value="all">All</option>
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="dark">Dark</option>
+    </select> <br><br>
+    <label for="search">Coffee Name</label><br>
+    <input type="text" id="search"><br><br>
+</form><br>
 
 
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="coffees"></tbody>-->
-<!--    </table>-->
+<form id="name-input">
+    <label for="coffee-roast">Roast</label><br>
+    <select id="coffee-roast">
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="dark">Dark</option>
+    </select><br><br>
+    <label for="coffee-name">Name</label><br>
+    <input type="text" id="coffee-name"><br><br>
+    <input id="addCoffee" type="submit" >
+</form><br>
+<h3>Option Selected</h3>
+<div id="coffee"></div>
 
-
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
