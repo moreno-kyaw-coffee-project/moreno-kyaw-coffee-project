@@ -78,7 +78,7 @@
     color: #F7EFDA;
 
 }
-.container{
+.container-coffee{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -91,7 +91,7 @@
     color: #F7EFDA;
 
 }
-.container2{
+.container-coffee-picked{
     display: flex;
     flex-direction: column;
     justify-content:center;
