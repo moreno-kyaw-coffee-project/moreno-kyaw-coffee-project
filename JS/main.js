@@ -18,9 +18,11 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 // Searching Coffee
+// Get references to form and coffee list elements
 var tbody = document.querySelector('#coffee');
 tbody.innerHTML = renderCoffees(coffees);
 
+// Add event listener to form submission
 var roastSelection = document.querySelector('#roast-selection');
 roastSelection.addEventListener('change', updateCoffeesRoast);
 
@@ -28,8 +30,10 @@ var nameSearch = document.querySelector('#search');
 nameSearch.addEventListener('keyup', updateCoffeesName);
 
 // Adding Coffee
+// Get references to form and coffee list elements
 var nameInput = document.querySelector('#name-input');
 
+// Add event listener to form submission
 var inputSubmit = document.querySelector('#addCoffee');
 inputSubmit.addEventListener('click', addCoffee );
 
@@ -53,7 +57,7 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-//Filtering the existing Coffees by searching
+//Filtering the existing Coffees by name searching
 function updateCoffeesName(e) {
     e.preventDefault();
     var searchTerm = nameSearch.value.trim().toLowerCase();
@@ -82,19 +86,22 @@ function updateCoffeesRoast(e) {
 // Adding the coffees by user
 function addCoffee(e) {
     e.preventDefault();
+    // Retrieve coffee name and roast values
     var coffeeName = document.querySelector('#coffee-name').value;
     var coffeeRoast = document.querySelector('#coffee-roast').value;
 
     var capitalName = capitalizeFirstLetter(coffeeName);
+    // Create new coffee object
     var newCoffee = {
         id: coffees.length + 1,
         name: capitalName,
         roast: coffeeRoast
     };
-
+    //Add new coffees to original coffee list
     coffees.push(newCoffee);
     // renderCoffees(coffees);
 
+    // clear from the original list once refresh the page
     nameInput.reset();
     tbody.innerHTML = renderCoffees(coffees);
 }
