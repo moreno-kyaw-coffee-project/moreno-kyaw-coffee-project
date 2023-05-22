@@ -1,21 +1,21 @@
 'use strict';
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light',price: '$4.49'},
-    {id: 2, name: 'Half City', roast: 'light',price: '$4.99'},
-    {id: 3, name: 'Cinnamon', roast: 'light',price: '$5.49'},
+    {id: 1, name: 'Light City', roast: 'light'},
+    {id: 2, name: 'Half City', roast: 'light'},
+    {id: 3, name: 'Cinnamon', roast: 'light'},
 
-    {id: 4, name: 'City', roast: 'medium',price: '$4.49'},
-    {id: 5, name: 'American', roast: 'medium',price: '$5.49'},
-    {id: 6, name: 'Breakfast', roast: 'medium',price: '$3.99'},
+    {id: 4, name: 'City', roast: 'medium'},
+    {id: 5, name: 'American', roast: 'medium'},
+    {id: 6, name: 'Breakfast', roast: 'medium'},
 
-    {id: 7, name: 'High', roast: 'dark',price: '$4.49'},
-    {id: 8, name: 'Continental', roast: 'dark',price: '$4.49'},
-    {id: 9, name: 'New Orleans', roast: 'dark',price: '$4.49'},
-    {id: 10, name: 'European', roast: 'dark',price: '$4.99'},
-    {id: 11, name: 'Espresso', roast: 'dark',price: '$4.99'},
-    {id: 12, name: 'Viennese', roast: 'dark',price: '$5.99'},
-    {id: 13, name: 'Italian', roast: 'dark',price: '$5.99'},
-    {id: 14, name: 'French', roast: 'dark',price: '$5.99'},
+    {id: 7, name: 'High', roast: 'dark'},
+    {id: 8, name: 'Continental', roast: 'dark'},
+    {id: 9, name: 'New Orleans', roast: 'dark'},
+    {id: 10, name: 'European', roast: 'dark'},
+    {id: 11, name: 'Espresso', roast: 'dark'},
+    {id: 12, name: 'Viennese', roast: 'dark'},
+    {id: 13, name: 'Italian', roast: 'dark'},
+    {id: 14, name: 'French', roast: 'dark'},
 ];
 // Searching Coffee
 var tbody = document.querySelector('#coffee');
@@ -39,7 +39,6 @@ function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     html += '<h1>' + coffee.name + '</h1>';
     html += '<p>' + coffee.roast + '</p>';
-    html += '<p>' + coffee.price + '</p>';
     html += '</div>';
 
     return html;
@@ -99,7 +98,7 @@ function addCoffee(e) {
     nameInput.reset();
     tbody.innerHTML = renderCoffees(coffees);
 }
-// Making case insensitive
+// Changing first letter of the words toUppercase
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

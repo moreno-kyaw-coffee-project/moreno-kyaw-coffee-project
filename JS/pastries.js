@@ -1,3 +1,4 @@
+'use strict';
 var  pastries= [
     {id: 'p1', name: 'Fraisier', type: 'cakes', price: '$12.99',image: '../img/Fraisier.jpeg'},
     {id: 'p2', name: 'Faidone', type: 'cakes', price: '$11.99',image: '../img/Faidone.jpeg'},
@@ -11,8 +12,8 @@ var  pastries= [
 
     {id: 'p9', name: 'Chocolate Chip Cookies', type: 'cookies', price: '$3.99',image: '../img/chocolate chip cookie.jpeg'},
     {id: 'p10', name: 'Macaroon Cookies', type: 'cookies', price: '$8.99',image: '../img/Macaroon Cookies.png'},
-    {id: 'p11', name: 'Berner Haselnusslebkuchen', type: 'cookies', price: '$4.99',image: '../img/Berner Haselnusslebkuchen.jpeg'},
-    {id: 'p12', name: 'Piñata cookie', type: 'cookies', price: '$6.99',image: '../img/Piñata cookie.jpeg'},
+    {id: 'p11', name: 'Berner Cookies', type: 'cookies', price: '$4.99',image: '../img/Berner Haselnusslebkuchen.jpeg'},
+    {id: 'p12', name: 'Piñata cookies', type: 'cookies', price: '$6.99',image: '../img/Piñata cookie.jpeg'},
 
     {id: 'p13', name: 'Éclairs', type: 'pastries', price: '$4.29',image: '../img/Éclairs.jpeg'},
     {id: 'p14', name: 'Profiteroles', type: 'pastries', price: '$5.99',image: '../img/Profiteroles.jpeg'},
